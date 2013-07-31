@@ -4,15 +4,12 @@
 <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <base target="maincontent" />
-        <title>Welcome to Spring Web MVC project</title>   
-        <link href="/Minecraft/resource/CSS/reset.css" rel="stylesheet" type="text/css">
-        <link href="/Minecraft/resource/CSS/style.css" rel="stylesheet" type="text/css">		
-</head> 
+        <title>Welcome to Spring Web MVC project</title>        		
+</head>
 
-    <body>
-        <font size="20">下載說明：</font><br>
-    敢羚羊<br>
-    <font size="20">代購遊戲說明：</font><br>
-    草支擺
-    </body>
+<body>
+   <div align="center">
+        <img src="/Minecraft/resource/pic/under.jpg"/>
+   </div>
+</body>
 </html>

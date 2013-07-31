@@ -4,12 +4,12 @@
 <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <base target="maincontent" />
-        <title>Welcome to Spring Web MVC project</title>   
-        <link href="/Minecraft/resource/CSS/reset.css" rel="stylesheet" type="text/css">
-        <link href="/Minecraft/resource/CSS/style.css" rel="stylesheet" type="text/css">		
+        <title>Welcome to Spring Web MVC project</title>
 </head> 
 
     <body>
-        <font size="24">施工中...</font>              
+        <div align="center">
+        <img src="/Minecraft/resource/pic/under.jpg"/>
+        </div>
     </body>
 </html>

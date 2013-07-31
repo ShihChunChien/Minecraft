@@ -4,13 +4,11 @@
 <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <base target="maincontent" />
-        <title>Welcome to Spring Web MVC project</title>   
-        <link href="/Minecraft/resource/CSS/reset.css" rel="stylesheet" type="text/css">
-        <link href="/Minecraft/resource/CSS/style.css" rel="stylesheet" type="text/css">		
-</head> 
-
-    <body>
-        <font size="18">臉書社團：北七社</font><br>
-        <font size="18">電子信箱：shiuan@shiuan.shiuan</font>
+        <title>Welcome to Spring Web MVC project</title>        
+</head>
+    <body>        
+        <div align="center">
+        <img src="/Minecraft/resource/pic/under.jpg"/>
+        </div>
     </body>
 </html>

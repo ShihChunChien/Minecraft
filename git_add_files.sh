@@ -5,4 +5,5 @@ git add src/java/controller/LoginAction.java
 git add src/java/controller/LoginForm.java
 git add src/java/controller/RegisterAction.java
 git add src/java/controller/RegisterForm.java
+git add src/java/controller/encryption.java
 git add web/

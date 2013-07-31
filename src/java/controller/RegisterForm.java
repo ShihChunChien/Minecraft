@@ -34,6 +34,8 @@ public class RegisterForm {
     private static String password;
     private static String sex;
     private static String inputLine;
+    private static String putreset;
+    private static String allstr;
     public static String id;
     
     public void setStatus(String status) { 
@@ -86,25 +88,22 @@ public class RegisterForm {
     
     public static String official(){
         try {  
-   URL google = new URL("http://login.minecraft.net/?user=" + username + "&password=" + password + "&version=13");
+   URL google = new URL("http://login.minecraft.net/?user=" + email + "&password=" + password + "&version=13");
    URLConnection yc = google.openConnection();
    BufferedReader in = new BufferedReader(new InputStreamReader(yc.getInputStream()));
    
    inputLine = in.readLine(); 
-   System.out.println(inputLine);  
+   System.out.println(inputLine);
+   
    in.close(); 
   } catch (Exception e) {
    e.printStackTrace();
-  }  
-  return inputLine;
-}  
-  public String doGet(HttpServletRequest request)throws ServletException, IOException{
-  HttpSession session = request.getSession();
-  id = session.getId();
-  System.out.println("Session Id is : " + id);  
-        return id;
   }
-  
+  if(email == null){putreset = "ture";}
+  else{putreset = "Bad login";}
+  return putreset;
+}  
+    
 public String main() throws ClassNotFoundException {
     String sqltest = null;
     String driver = "com.mysql.jdbc.Driver"; 
@@ -114,13 +113,18 @@ public String main() throws ClassNotFoundException {
   try {      
   Class.forName(driver);
   Connection conn = DriverManager.getConnection(dburl, dbuser, dbpassword); 
-  Statement constat = conn.createStatement();
-  //String qry1 = "INSERT INTO sells VALUES ('win','wine',123)";
-  if("1".equals(getStatus())){        
-       int insert = constat.executeUpdate( "insert into users(status, password ,sex ,email)" + " VALUES ('1', '"+password+"' ,'"+sex+"' ,'"+email+"') ") ;
-       }
-  if("0".equals(getStatus())){        
-       int insert = constat.executeUpdate( "insert into users(status, username, password ,sex)" + " VALUES ('0', '"+username+"', '"+password+"' ,'"+sex+"') ") ;
+  Statement constat = conn.createStatement();   
+  
+  if("1".equals(getStatus())){
+      if(!"Bad login".equals(official())){
+        String allstr = inputLine;   
+        String oacstr[] = allstr.split(":");
+        System.out.println(oacstr[2]);
+        
+       int insert = constat.executeUpdate( "insert into users(status, username ,password ,sex ,email)" + " VALUES ('1', '"+oacstr[2]+"' ,'"+encryption.md5()+"' ,'"+sex+"' ,'"+email+"') ") ;
+       }}
+  if("0".equals(getStatus())){
+       int insert = constat.executeUpdate( "insert into users(status, username, password ,sex)" + " VALUES ('0', '"+username+"', '"+encryption.md5()+"' ,'"+sex+"') ") ;
        }
       //System.out.println(insert);
        // retrieve a list of three random cities

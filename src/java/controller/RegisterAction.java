@@ -17,13 +17,13 @@ public class RegisterAction extends SimpleFormController {
        RegisterForm form = (RegisterForm) command; 
         
       /* if("123456".equals(form.getUsername()) && "123456".equals(form.getPassword())) */
-       //if(!"Bad login".equals(form.official()))
-       //{
+       if(!"Bad login".equals(form.official()) || "0".equals(form.getStatus()))
+       {
           //String test = form.official();
           return new ModelAndView(this.getSuccessView(),"user", form.main());
-       //} 
-       //else{ 
-          //return new ModelAndView(this.getFormView());
-       //}
+       } 
+       else{ 
+          return new ModelAndView(this.getFormView());
+       }
     }
 }

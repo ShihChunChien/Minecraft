@@ -21,6 +21,8 @@
                 <prop key="index.htm">indexController</prop>               
                 <prop key="notice.htm">notice</prop> 
                 <prop key="instruction.htm">instruction</prop>
+                <prop key="server.htm">server</prop>
+                <prop key="donate.htm">donate</prop>
                 <prop key="download.htm">download</prop>
                 <prop key="cs.htm">cs</prop>
                 <prop key="login.htm">login</prop>
@@ -43,10 +45,16 @@
           p:viewName="index" />   
     <bean name="notice"
           class="org.springframework.web.servlet.mvc.ParameterizableViewController"
-          p:viewName="yahoo" />
+          p:viewName="notice" />
     <bean name="instruction"
           class="org.springframework.web.servlet.mvc.ParameterizableViewController"
           p:viewName="instruction" />
+    <bean name="server"
+          class="org.springframework.web.servlet.mvc.ParameterizableViewController"
+          p:viewName="server" />
+    <bean name="donate"
+          class="org.springframework.web.servlet.mvc.ParameterizableViewController"
+          p:viewName="donate" />
     <bean name="download"
           class="org.springframework.web.servlet.mvc.ParameterizableViewController"
           p:viewName="download" />
@@ -80,7 +88,7 @@
             <value>success</value> 
         </property> 
         <property name="formView"> 
-            <value>login</value> 
+            <value>register</value> 
         </property>
      </bean>   
 </beans>
