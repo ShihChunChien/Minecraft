@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+	
+<hibernate-configuration> 
+
+    <session-factory> 
+
+    <!-- 顯示實際操作資料庫時的SQL --> 
+    <property name="show_sql">true</property> 
+    <!-- 將顯示的SQL排版，方便觀看 -->
+    <property name="format_sql">true</property>
+    
+    <property name="hibernate.current_session_context_class">thread</property> 
+    <!-- SQL方言，這邊設定的是MySQL --> 
+    <property name="dialect">org.hibernate.dialect.MySQLDialect</property> 
+    <!-- JDBC驅動程式 --> 
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property> 
+    <!-- JDBC URL --> 
+    <property name="connection.url">jdbc:mysql://173.1.15.169:3306/Minecraft</property> 
+    <!-- 資料庫使用者 --> 
+    <property name="connection.username">webapps</property> 
+    <!-- 資料庫密碼 --> 
+    <property name="connection.password">123456</property>
+    
+   <!-- C3P0 連接池設定 --> 
+   <!-- 最小的Connection數目 -->
+   <property name="c3p0.min_size">1</property> 
+   <!-- 最大的Connection數目 -->
+   <property name="c3p0.max_size">20</property> 
+   <!-- 允許的idle時間 -->
+   <property name="c3p0.timeout">300</property> 
+   <!-- 最大的Statement數目 -->
+   <property name="c3p0.max_statements">50</property> 
+   <!-- idle的測試週期 -->
+   <property name="c3p0.idle_test_period">3000</property> 
+
+    <!-- 以下設置物件與資料庫表格映射文件 --> 
+    
+    <mapping resource="User.hbm.xml"/>
+ 
+    </session-factory> 
+
+</hibernate-configuration>
