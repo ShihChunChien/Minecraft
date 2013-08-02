@@ -17,13 +17,10 @@
 <body>   
  <div id="yuitabview1" class="yui-navset">
     <ul class="yui-nav"> 
-    <%if(RegisterForm.official() == "ture"){%>
+   
     <li  class="selected"><a href="#tab1"><em>我有正版帳號</em></a></li>
     <li><a href="#tab2"><em>我沒有正版帳號</em></a></li>
-    <%}else{%>
-    <li><a href="#tab1"><em>我有正版帳號</em></a></li>
-    <li class="selected"><a href="#tab2"><em>我沒有正版帳號</em></a></li>
-    <%}%>    
+    
     </ul>                
   
   <div class="yui-content">
@@ -31,32 +28,37 @@
     請輸入信箱與密碼：<p> 
     <form id="registerform" name="registerform" action="register.do" method="post" onsubmit="return checktab1();">
     	<input type="hidden"  name="status" value="1">
-        信箱 <input type="text" name="email"/><br>        
-        密碼 <input type="password" name="password"/><br>        
+        信箱 <input type="text" name="email"/><br>
+             <input type="hidden" name="username" value=""/><br>
+        密碼 <input type="password" name="password"/><br><br>     
         性別
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <input id="sex" type="radio" name="sex" value="1">男
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-       	<input type="radio" name="sex" value="2">女<br>
+       	<input type="radio" name="sex" value="2">女<br><br>
     <input type="submit" value="註冊"/>
     </form>
     </div>
     <div id="tab2" align="left">
-    請輸帳號與密碼：<p> 
+    請輸入帳號與密碼：<p> 
     <form id="registerform" name="registerform" action="register.do" method="post" onsubmit="return checktab2();">
 	     <input type="hidden"  name="status" value="0">
-        帳號 <input type="text" name="username"/><br>        
-        密碼 <input type="password" name="password"/><br>       
+        帳號 <input type="text" name="username"/><br>
+             <input type="hidden" name="email" value=""/><br>
+        密碼 <input type="password" name="password"/><br><br>   
         性別
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
         <input type="radio" name="sex" value="1">男
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="radio" name="sex" value="2">女<br>
+        <input type="radio" name="sex" value="2">女<br><br>
     <input type="submit" value="註冊"/>
     </form>    
    </div>     
   </div>
-  <div align="right"><input type="button" value="回首頁" onClick="window.top.location.href='index.htm';"></div>  
+  <div align="right"><input type="button" value="回首頁" onClick="window.top.location.href='index.htm';"></div>
+  
+  <div>${tips}</div>
+  
 </div>
 <script language="javascript" type="text/javascript">    
 function checktab1()
@@ -78,7 +80,7 @@ function checktab2()
     var b = top.window.frames[x].document.getElementsByName("password");
     var c = top.window.frames[x].document.getElementsByName("sex");    
    
-    if(a1[0].value === ""){alert("請輸入帳號");return false;}
+    if(a1[1].value === ""){alert("請輸入帳號");return false;}
     if(b[1].value === ""){alert("請輸入密碼");return false;}
     if(c[2].checked === false && c[3].checked === false){alert("請輸入性別");return false;} 
 }
