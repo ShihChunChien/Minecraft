@@ -4,17 +4,18 @@
 
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">          
-        <title>Welcome to Spring Web MVC project</title>
-    </head>       
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>歡迎來到九天之上</title>
+    </head>
 
-<body>    
-請輸入使用者名稱與密碼：<p> 
-    <form name="loginform" action="login.do" method="post"> 
-        帳號 <input type="text" name="username"/><br> 
-        密碼 <input type="password" name="password"/><br> 
-        <input type="submit" value="確定"/> 
-    </form> 
-    輸入錯誤將會再回到此頁面
-</body>
+    <body>
+        請輸入使用者名稱與密碼：<p>
+        <form name="loginform" action="login.do" method="post">
+            <br>
+            帳號 <input type="text" name="username"/><br>
+            密碼 <input type="password" name="password"/><br>
+            <input type="submit" value="確定"/>
+        </form>
+        <!--輸入錯誤將會再回到此頁面-->
+    </body>
 </html>

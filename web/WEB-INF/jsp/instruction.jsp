@@ -4,7 +4,7 @@
 <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <base target="maincontent" />
-        <title>Welcome to Spring Web MVC project</title>
+        <title>歡迎來到九天之上</title>
 </head> 
 
     <body>

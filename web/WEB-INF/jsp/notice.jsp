@@ -5,12 +5,12 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">           
-        <title>Welcome to Spring Web MVC project</title>
-    </head>   
+        <title>歡迎來到九天之上</title>
+    </head>
   
 <body>
         <div align="center">
-        <img src="/Minecraft/resource/pic/under.jpg"/>
+            請先註冊<br>
         </div>
 </body>
 </html>
