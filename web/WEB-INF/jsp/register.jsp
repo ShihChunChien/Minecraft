@@ -6,11 +6,11 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link href="/Minecraft/resource/CSS/fonts-min.css" rel="stylesheet" type="text/css" />
-        <link href="/Minecraft/resource/CSS/tabview.css" rel="stylesheet" type="text/css" />
-        <script src="/Minecraft/resource/js/yahoo-dom-event.js" type="text/javascript"></script>
-        <script src="/Minecraft/resource/js/element-beta-min.js" type="text/javascript"></script>
-        <script src="/Minecraft/resource/js/tabview.js" type="text/javascript"></script>
+        <link href="http://yui.yahooapis.com/2.9.0/build/fonts/fonts-min.css" rel="stylesheet" type="text/css" />
+        <link href="http://yui.yahooapis.com/2.9.0/build/tabview/assets/skins/sam/tabview.css" rel="stylesheet" type="text/css" />
+        <script src="http://yui.yahooapis.com/2.9.0/build/yahoo-dom-event/yahoo-dom-event.js" type="text/javascript"></script>
+        <script src="http://yui.yahooapis.com/2.9.0/build/element/element-min.js" type="text/javascript"></script>
+        <script src="http://yui.yahooapis.com/2.9.0/build/tabview/tabview-min.js" type="text/javascript"></script>
         <title>歡迎來到九天之上</title>
     </head>
 

@@ -19,12 +19,12 @@
                         <li></li>
                     </ul>
                 </li>
-                <%--<li><a href="instruction.htm"><b>新手說明</b></a>
+                <li><a href="instruction.htm"><b>新手說明</b></a>
                     <ul>
                         <li></li>
                     </ul>
                 </li>
-                <li><a href="server.htm"><b>伺服介紹</b></a>
+                <%--<li><a href="server.htm"><b>伺服介紹</b></a>
                     <ul>
                         <li></li>
                         <!--<li><a class="last" href="#url">Dropdown Five</a></li>-->
@@ -87,8 +87,7 @@
         </div>
     </body>
 </html>
-<%--input default給值--%>
-<script type="text/javascript">
+<script type="text/javascript"><%--input default給值--%>
     $("input:text").each(
             function() {
                 $(this).blur(

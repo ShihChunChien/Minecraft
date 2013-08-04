@@ -59,7 +59,7 @@ public class RegisterAction extends SimpleFormController {
                     }
                 }
             }
-            return new ModelAndView(this.getFormView(), "tips1", tipsout);//跳回頁面並顯示錯誤訊息
+            return new ModelAndView(this.getFormView(), "tips1", tipsout);//預計跳回頁面並顯示錯誤訊息
         } else if ("0".equals(form.getStatus())) {//非正版頁面
             if (!regexCheckFlag) {//格式檢查錯誤，以後要改寫不同檢查狀況
                 tipsout = "帳號格式錯誤";
@@ -70,7 +70,7 @@ public class RegisterAction extends SimpleFormController {
                     tipsout = form.puttips; //sql錯誤訊息比對
                 }
             }
-            return new ModelAndView(this.getFormView(), "tips0", tipsout);//跳回頁面並顯示錯誤訊息
+            return new ModelAndView(this.getFormView(), "tips0", tipsout);//預計跳回頁面並顯示錯誤訊息
         } else {//未知的頁面
             return new ModelAndView(this.getErrorView());
         }
