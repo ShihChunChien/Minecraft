@@ -8,7 +8,7 @@
         <link href="resource/CSS/reset.css" rel="stylesheet" type="text/css">
         <link href="resource/CSS/style.css" rel="stylesheet" type="text/css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" type="text/javascript"></script>
-        <script src="resource/js/jquery.DOMWindow.js" type="text/javascript"></script>
+        <script src="http://swip.codylindley.com/jquery.DOMWindow.js" type="text/javascript"></script>
     </head>
     <body>
         <div id="header">
