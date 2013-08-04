@@ -37,7 +37,7 @@ public class RegisterAction extends SimpleFormController {
         String str = form.official();
         boolean legalCheck;
 
-        if ("Bad login".equals(str)) {
+        if ("Bad login".equals(str)) {//搬去offcial check?
             legalCheck = false;
         } else if (str.length() > 20) {
             legalCheck = true;
@@ -46,7 +46,7 @@ public class RegisterAction extends SimpleFormController {
         }
 
         if ("1".equals(form.getStatus())) {//正版頁面
-            if (!regexCheckFlag) {//格式檢查錯誤，以後要改寫不同檢查狀況
+            if (!regexCheckFlag) {//格式檢查錯誤，以後要改寫列出不同檢查狀況
                 tipsout = "帳號格式錯誤";
             } else {//格式正確
                 if (!legalCheck) {//official check fail
@@ -61,7 +61,7 @@ public class RegisterAction extends SimpleFormController {
             }
             return new ModelAndView(this.getFormView(), "tips1", tipsout);//預計跳回頁面並顯示錯誤訊息
         } else if ("0".equals(form.getStatus())) {//非正版頁面
-            if (!regexCheckFlag) {//格式檢查錯誤，以後要改寫不同檢查狀況
+            if (!regexCheckFlag) {//格式檢查錯誤，以後要改寫列出不同檢查狀況
                 tipsout = "帳號格式錯誤";
             } else {//格式正確
                 if (form.main() == null) {//寫入成功
