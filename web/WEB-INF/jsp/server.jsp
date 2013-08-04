@@ -9,7 +9,7 @@
 </head> 
  <body>
     <div align="center">
-        <img src="/Minecraft/resource/pic/under.jpg"/>
+        <img src="resource/pic/under.jpg"/>
     </div>  
 </body>
 </html>

@@ -4,7 +4,7 @@
 	/*$.fn.closeDOMWindow = function(settings){
 		//var iframe = window.frames["maincontent"];
                 //document.write(iframe.document);
-		if(!settings || settings.windowSourceURL === "/Minecraft/register.htm"){settings={};}
+		if(!settings || settings.windowSourceURL === "register.htm"){settings={};}
 		
 		var run = function(passingThis){
 			

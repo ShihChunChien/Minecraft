@@ -5,14 +5,14 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <base target="maincontent" />
         <title>歡迎來到九天之上</title>
-        <link href="/Minecraft/resource/CSS/reset.css" rel="stylesheet" type="text/css">
-        <link href="/Minecraft/resource/CSS/style.css" rel="stylesheet" type="text/css">
+        <link href="resource/CSS/reset.css" rel="stylesheet" type="text/css">
+        <link href="resource/CSS/style.css" rel="stylesheet" type="text/css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" type="text/javascript"></script>
-        <script src="/Minecraft/resource/js/jquery.DOMWindow.js" type="text/javascript"></script>
+        <script src="resource/js/jquery.DOMWindow.js" type="text/javascript"></script>
     </head>
     <body>
         <div id="header">
-            <img id="logo" src="/Minecraft/resource/pic/logo.jpg" width="190" height="127" />
+            <img id="logo" src="resource/pic/logo.jpg" width="190" height="127" />
             <ul id="dropline">
                 <li class="current"><a href="notice.htm"><b>公告</b></a>
                     <ul>
@@ -81,7 +81,7 @@
             </div>
             <div id="content">
                 <iframe class="iframe" id="maincontent" scrolling="auto" >
-                    <img src="/Minecraft/resource/pic/index.gif">
+                    <img src="resource/pic/index.gif">
                 </iframe>
             </div>
         </div>
