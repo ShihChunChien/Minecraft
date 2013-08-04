@@ -18,8 +18,8 @@
         <div id="yuitabview1" class="yui-navset">
             <ul class="yui-nav">
 
-                <li  class="selected"><a href="#tab1"><em>正版帳號注冊</em></a></li>
-                <li><a href="#tab2"><em>普通注冊</em></a></li>
+                <li name="selector1" class="selected" ><a href="#tab1"><em>正版帳號注冊</em></a></li>
+                <li name="selector2"><a href="#tab2"><em>普通注冊</em></a></li>
 
             </ul>
 
@@ -29,23 +29,26 @@
                     <form id="registerform" name="registerform" action="register.do" method="post" onsubmit="return checktab1();">
                         <input type="hidden"  name="status" value="1">
                         <input type="hidden" name="username" value=""/><br>
-                        電子信箱 <input type="text" title="email" value="請輸入帳號" name="email" onfocus="if (this.value==this.defaultValue) this.value=''"/><br>
-                        密碼 <input type="password" value="" name="password"/><br><br>
+                        電子信箱 <input type="text" title="email" value="請輸入帳號" name="email" onfocus="if (this.value == this.defaultValue)
+                                this.value = ''"/><br><br>
+                        密碼 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" value="" name="password"/><br><br>
                         性別
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <input id="sex" type="radio" name="sex" value="1">男
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <input type="radio" name="sex" value="2">女<br><br>
                         <input type="submit" value="註冊"/>
-                                    <div>${tips1}</div>
+                        <div name="tips1">${tips1}</div>
                     </form>
                 </div>
                 <div id="tab2" align="left">
                     請填寫基本資料：<p>
                     <form id="registerform" name="registerform" action="register.do" method="post" onsubmit="return checktab2();">
                         <input type="hidden"  name="status" value="0">
-                        帳號 <input type="text" name="username" value="請輸入帳號" onfocus="if (this.value==this.defaultValue) this.value=''"/><br>
-                        <input type="hidden" name="email" value="請輸入mail" onfocus="if (this.value==this.defaultValue) this.value=''"/><br>
+                        帳號 <input type="text" name="username" value="請輸入帳號" onfocus="if (this.value == this.defaultValue)
+                                this.value = ''"/><br>
+                        <input type="hidden" name="email" value="請輸入mail" onfocus="if (this.value == this.defaultValue)
+                                this.value = ''"/><br>
                         密碼 <input type="password" name="password" value=""/><br><br>
                         性別
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -53,13 +56,30 @@
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <input type="radio" name="sex" value="2">女<br><br>
                         <input type="submit" value="註冊"/>
-                                    <div>${tips0}</div>
+                        <div name="tips0">${tips0}</div>
                     </form>
                 </div>
             </div>
             <div align="right"><input type="button" value="回首頁" onClick="window.top.location.href = 'index.htm';"></div>
         </div>
         <script language="javascript" type="text/javascript">
+
+                        d = top.document.getElementById("DOMWindowIframe").name;
+                        e = top.window.frames[d].document.getElementsByName("tips1")[0].innerText;
+                        f = top.window.frames[d].document.getElementsByName("tips0")[0].innerText;
+                        g = top.window.frames[d].document.getElementsByName("selector1")[0];
+                        h = top.window.frames[d].document.getElementsByName("selector2")[0];
+                        if (e != "") {
+                            g.className = "selected";
+                            h.className = "";
+                        }
+                        else if (f != "") {
+                            h.className = "selected";
+                            g.className = "";
+                        }
+
+
+
                         function checktab1()
                         {
                             var x = top.document.getElementById("DOMWindowIframe").name;
