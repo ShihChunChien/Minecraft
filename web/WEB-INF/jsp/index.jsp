@@ -38,18 +38,18 @@
                         <li><a href="#url">Dropline Three</a></li>
                         <li><a class="last" href="#url">Dropline Four</a></li>-->
                     </ul>
-                </li>
+                </li>--%>
                 <li><a href="download.htm"><b>下載</b></a>
                     <ul>
-                        <li></li>
-                            <!--<li><a href="#url">Flyout One</a></li>
+                        <%--<li></li>
+                            <li><a href="#url">Flyout One</a></li>
                             <li><a href="#url">Flyout Two</a></li>
                             <li><a href="#url">Flyout Three</a></li>
                             <li><a href="#url">Flyout Four</a></li>
-                            <li><a class="last" href="#url">Flyout Five</a></li>-->
+<li><a class="last" href="#url">Flyout Five</a></li>--%>
                     </ul>
                 </li>
-                <li><a href="cs.htm"><b>客服</b></a>
+                <%--<li><a href="cs.htm"><b>客服</b></a>
                     <ul>
                         <li></li>
                     </ul>
@@ -59,8 +59,7 @@
 
         <div id="wrapper">
             <div id="side">
-                <!--<a href="login.htm">登入</a><br><br><br>
-                <a href="register.htm">註冊</a><br>-->
+                <%--<a href="login.htm">登入</a>--%>
                 <a href="register.htm" class="absoluteIframeDOMWindow">註冊</a>
                 <script type="text/javascript">
                     $('.absoluteIframeDOMWindow').openDOMWindow({
@@ -80,8 +79,7 @@
                 </script>
             </div>
             <div id="content">
-                <iframe class="iframe" id="maincontent" scrolling="auto" >
-                    <img src="resource/pic/index.gif">
+                <iframe src="notice.htm" class="iframe" id="maincontent" scrolling="auto" >
                 </iframe>
             </div>
         </div>

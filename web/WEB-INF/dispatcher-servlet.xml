@@ -31,9 +31,9 @@
                 <prop key="register.do">registerAction</prop>           
             </props>
         </property>
-   </bean>
+    </bean>
 
-   <bean id="viewResolver"
+    <bean id="viewResolver"
           class="org.springframework.web.servlet.view.InternalResourceViewResolver"
           p:prefix="/WEB-INF/jsp/"
           p:suffix=".jsp" />
@@ -61,14 +61,14 @@
     <bean name="cs"
           class="org.springframework.web.servlet.mvc.ParameterizableViewController"
           p:viewName="cs" />
-     <bean name="login"
+    <bean name="login"
           class="org.springframework.web.servlet.mvc.ParameterizableViewController"
           p:viewName="login" />
-     <bean name="register"
+    <bean name="register"
           class="org.springframework.web.servlet.mvc.ParameterizableViewController"
           p:viewName="register" /> 
     
-     <bean id="loginAction" class="controller.LoginAction"> 
+    <bean id="loginAction" class="controller.LoginAction"> 
         <property name="commandClass"> 
             <value>controller.LoginForm</value> 
         </property> 
@@ -78,9 +78,9 @@
         <property name="formView"> 
             <value>login</value> 
         </property>
-     </bean>
+    </bean>
         
-     <bean id="registerAction" class="controller.RegisterAction"> 
+    <bean id="registerAction" class="controller.RegisterAction"> 
         <property name="commandClass"> 
             <value>controller.RegisterForm</value> 
         </property> 
@@ -90,5 +90,5 @@
         <property name="formView"> 
             <value>register</value> 
         </property>
-     </bean>   
+    </bean>   
 </beans>

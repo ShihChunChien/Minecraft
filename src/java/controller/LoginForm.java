@@ -20,47 +20,48 @@ import javax.servlet.http.HttpSession;
  *
  * @author Vincent
  */
+public class LoginForm {
 
-public class LoginForm { 
-    private static String username; 
-    private static String password;   
+    private static String username;
+    private static String password;
     private String inputLine;
     public static String id;
-    
-    public void setUsername(String username) { 
-       this.username = username; 
-    } 
-    
-    public void setPassword(String password) { 
-       this.password = password; 
-    } 
-    
-    public static String getUsername() { 
-       return username; 
-    } 
-    
-    public String getPassword() { 
-       return password; 
+
+    public void setUsername(String username) {
+        this.username = username;
     }
-    public String official(){
-        try {  
-   URL google = new URL("http://login.minecraft.net/?user=" + username + "&password=" + password + "&version=13");
-   URLConnection yc = google.openConnection();
-   BufferedReader in = new BufferedReader(new InputStreamReader(yc.getInputStream()));
-   
-   inputLine = in.readLine(); 
-   System.out.println(inputLine);  
-   in.close(); 
-  } catch (Exception e) {
-   e.printStackTrace();
-  }  
-  return inputLine;
-}
-    
-  public String doGet(HttpServletRequest request)throws ServletException, IOException{
-  HttpSession session = request.getSession();
-  id = session.getId();
-  System.out.println("Session Id is : " + id);  
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public static String getUsername() {
+        return username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public String official() {
+        try {
+            URL google = new URL("http://login.minecraft.net/?user=" + username + "&password=" + password + "&version=13");
+            URLConnection yc = google.openConnection();
+            BufferedReader in = new BufferedReader(new InputStreamReader(yc.getInputStream()));
+
+            inputLine = in.readLine();
+            System.out.println(inputLine);
+            in.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return inputLine;
+    }
+
+    public String doGet(HttpServletRequest request) throws ServletException, IOException {
+        HttpSession session = request.getSession();
+        id = session.getId();
+        System.out.println("Session Id is : " + id);
         return id;
-  }    
+    }
 }

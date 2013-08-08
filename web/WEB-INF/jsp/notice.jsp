@@ -4,19 +4,23 @@
 
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">           
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>歡迎來到九天之上</title>
     </head>
-  
-<body>
-        <div align="center">
-            請先註冊
-            
-            "正版帳號"遊戲網址：
-            192.200.109.235
-            
-            "普通帳號"遊戲網址：
-            192.200.109.235:25566<br>
+
+    <body>
+        <div id="table">
+            <h1>
+                三步驟</h1>
         </div>
-</body>
+        <img src="resource/pic/download_step_all.jpg" title="馬上玩三步驟" alt="注冊&rarr;開遊戲(輸入IP)&rarr;登入"/><br>
+        <br>
+        <div id="table">
+            <div class="tr">
+                <div class="td">遊戲IP</div>
+                <div class="td">192.200.109.235</div>
+                <div class="td"><span style="color:#a9a9a9;">192.200.109.235:25566</span></div>
+            </div>
+        </div>
+    </body>
 </html>
