@@ -55,6 +55,7 @@
                 <br>
                 打開我的電腦，在網址列輸入<br>
                 %AppData%\.minecraft\versions<br>
+                <img src="resource/pic/download_version_path.jpg" style="width: 50%; height: 50%"/><br>
                 <br>
                 將下載的檔案解壓縮到此<br>
                 <img src="resource/pic/download_unzip1.jpg" style="width: 50%; height: 50%"/><br>

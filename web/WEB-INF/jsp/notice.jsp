@@ -13,7 +13,7 @@
             <h1>
                 三步驟</h1>
         </div>
-        <img src="resource/pic/download_step_all.jpg" title="馬上玩三步驟" alt="注冊&rarr;開遊戲(輸入IP)&rarr;登入"/><br>
+        <img src="resource/pic/play_step_all.jpg" title="馬上玩三步驟" alt="注冊&rarr;開遊戲(輸入IP)&rarr;登入"/><br>
         <br>
         <div id="table">
             <div class="tr">
