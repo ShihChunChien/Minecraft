@@ -92,7 +92,7 @@
             function() {
                 $(this).blur(
                         function() {
-                            if (this.value == this.defaultValue)
+                            if (this.value === this.defaultValue)
                                 this.value = this.defaultValue;
                         }
                 ).focus(

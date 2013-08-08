@@ -84,7 +84,7 @@ way to fit your requirements.
 
 
 
-#dropline table {border-collapse:collapse: width:0; height:0; margin:-3px -10px;}
+#dropline table {border-collapse:collapse; width:0; height:0; margin:-3px -10px;}
 
 #dropline li {float:left;}
 #dropline li a {display:block; height:40px; line-height:40px; padding:0 20px 0 0; float:left; color:#fff; text-decoration:none; font-family:tahoma, sans-serif; font-size:12px;}
