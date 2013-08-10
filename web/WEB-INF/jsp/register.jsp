@@ -27,7 +27,8 @@
                 <div id="tab1" align="left">
                     請填寫基本資料：<p>
                     <form id="registerform" name="registerform" action="register.do" method="post" onsubmit="return checktab1();">
-                        <input type="hidden"  name="status" value="1">
+                        <input type="hidden"  name="status" value="1"/>
+                        <input type="hidden"  name="usernamePrefix" value=""/>
                         <input type="hidden" name="username" value=""/><br>
                         電子信箱 <input type="text" title="email" value="請輸入帳號" name="email" onfocus="if (this.value == this.defaultValue)
                                 this.value = ''"/><br><br>
@@ -44,8 +45,13 @@
                 <div id="tab2" align="left">
                     請填寫基本資料：<p>
                     <form id="registerform" name="registerform" action="register.do" method="post" onsubmit="return checktab2();">
-                        <input type="hidden"  name="status" value="0">
-                        帳號 <input type="text" name="username" value="請輸入帳號" onfocus="if (this.value == this.defaultValue)
+                        <input type="hidden"  name="status" value="0"/>
+                        帳號<select name="usernamePrefix"> 
+                            <option value="sp_" >sp_</option>
+                            <%--<option value="up9cloud_" >up9cloud_</option>
+                            <option value="" >_</option>--%>
+                        </select>
+                        <input type="text" name="username" value="請輸入帳號" onfocus="if (this.value == this.defaultValue)
                                 this.value = ''"/><br>
                         <input type="hidden" name="email" value="請輸入mail" onfocus="if (this.value == this.defaultValue)
                                 this.value = ''"/><br>
