@@ -52,10 +52,31 @@ public class RegisterAction extends SimpleFormController {
                 if (!legalCheck) {//official check fail
                     tipsout = "正版帳號或密碼錯誤";
                 } else {//official check ok
-                    if (registerForm.main() == null) {//寫入成功
-                        return new ModelAndView(this.getSuccessView(), "user", registerForm.main());
+
+                    DatabaseModify databaseModify = new DatabaseModify();
+                    DatabaseModify.setDBname("Account");
+                    DatabaseModify.setTablename("users");
+                    DatabaseModify.setMethod("insert");
+                    String[][] columnValue = {
+                        {"status", status},
+                        {"username", oacstr[2]},
+                        {"password", encryption.md5()},
+                        {"sex", sex},
+                        {"email", email}
+                    };
+                    DatabaseModify.setColumnValue(columnValue);
+                    boolean insertFlag = databaseModify.insert();
+
+                    if (insertFlag == true) {//寫入成功
+                        tipsout = "???";
+                        return new ModelAndView(this.getSuccessView(), "user", tipsout);
                     } else {//寫入失敗
-                        tipsout = registerForm.puttips;  //sql錯誤訊息比對
+                        if (databaseModify.errorCode == 1062) {
+                            databaseModify.errorMessage = "您註冊的帳號已被使用";
+                        } else {
+                            databaseModify.errorMessage = "註冊失敗";
+                        }
+                        tipsout = databaseModify.errorMessage; //sql錯誤訊息比對
                     }
                 }
                 return new ModelAndView(this.getFormView(), "tips1", tipsout);//預計跳回頁面並顯示錯誤訊息
@@ -67,41 +88,30 @@ public class RegisterAction extends SimpleFormController {
                 } else if (!StringCheck.usernamePrefixCheck(usernamePrefix)) {
                     tipsout = "前綴字不合規定";
                 } else {//格式正確
-                    
-                  DatabaseModify databaseModify= new DatabaseModify();
-          DatabaseModify.setDBname("Account");
-        DatabaseModify.setTablename("users");
-        DatabaseModify.setMethod("insert");
-        String[][] columnValue = {
-                {"status",status},
-                       {"username" ,username},
-                       {"password" ,password.md5()} ,
-                       {"sex" ,sex}
-               };
-DatabaseModify.setColumnValue(columnValue);
 
-            if (errorCode == 1062) {
-                errorMessage = "您註冊的帳號已被使用";
-            } else {
-                errorMessage = "註冊失敗";
-            }                  
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    if (registerForm.main() == null) {//寫入成功
-                        return new ModelAndView(this.getSuccessView(), "user", registerForm.main());
+                    DatabaseModify databaseModify = new DatabaseModify();
+                    DatabaseModify.setDBname("Account");
+                    DatabaseModify.setTablename("users");
+                    DatabaseModify.setMethod("insert");
+                    String[][] columnValue = {
+                        {"status", status},
+                        {"username", username},
+                        {"password", encryption.md5()},
+                        {"sex", sex}
+                    };
+                    DatabaseModify.setColumnValue(columnValue);
+                    boolean insertFlag = databaseModify.insert();
+
+                    if (insertFlag == true) {//寫入成功
+                        tipsout = "???";
+                        return new ModelAndView(this.getSuccessView(), "user", tipsout);
                     } else {//寫入失敗
-                        tipsout = registerForm.puttips; //sql錯誤訊息比對
+                        if (databaseModify.errorCode == 1062) {
+                            databaseModify.errorMessage = "您註冊的帳號已被使用";
+                        } else {
+                            databaseModify.errorMessage = "註冊失敗";
+                        }
+                        tipsout = databaseModify.errorMessage; //sql錯誤訊息比對
                     }
                 }
                 return new ModelAndView(this.getFormView(), "tips0", tipsout);//預計跳回頁面並顯示錯誤訊息
@@ -114,10 +124,3 @@ DatabaseModify.setColumnValue(columnValue);
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
-//        String[][] columnValue = {
-//                {"status",status},
-//                       {"username" ,username"oacstr[2]"},
-//                       {"password" ,password.md5()} ,
-//                       {"sex" ,sex} ,
-//                       {"email"  ,email}
-//               };
