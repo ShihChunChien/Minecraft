@@ -57,6 +57,12 @@ public class RegisterAction extends SimpleFormController {
                     DatabaseModify.setDBname("Account");
                     DatabaseModify.setTablename("users");
                     DatabaseModify.setMethod("insert");
+
+                    String allstr = RegisterForm.official();
+                    String oacstr[] = allstr.split(":");
+
+                    System.out.println(oacstr[2]);
+
                     String[][] columnValue = {
                         {"status", status},
                         {"username", oacstr[2]},
