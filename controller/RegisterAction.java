@@ -62,7 +62,6 @@ public class RegisterAction extends SimpleFormController {
 
                     if (databaseModify.insert()) {//寫入成功
                         tipsout = "你想幹嘛?";
-                        registerForm.setUsernameOut(usernamePrefix, username);
                         registerForm.setPasswordOut(password);
                         return new ModelAndView(this.getSuccessView(), "user", tipsout);
                     } else {//寫入失敗
@@ -88,9 +87,10 @@ public class RegisterAction extends SimpleFormController {
                     DatabaseModify.setDBname("Account");
                     DatabaseModify.setTablename("users");
                     DatabaseModify.setMethod("insert");
+                    username = usernamePrefix + username;
                     String[][] columnValue = {
                         {"status", status},
-                        {"username", usernamePrefix + username},
+                        {"username", username},
                         {"password", Encryption.md5(password)},
                         {"sex", sex},
                         {"ip", ip}
@@ -100,7 +100,6 @@ public class RegisterAction extends SimpleFormController {
 
                     if (databaseModify.insert()) {//寫入成功
                         tipsout = "你想幹嘛?";
-                        registerForm.setUsernameOut(usernamePrefix, username);
                         registerForm.setPasswordOut(password);
                         return new ModelAndView(this.getSuccessView(), "user", tipsout);
                     } else {//寫入失敗
