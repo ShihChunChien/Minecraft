@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package controller;
 
 import java.security.MessageDigest;
@@ -11,7 +7,7 @@ import java.security.NoSuchAlgorithmException;
  *
  * @author Vincent
  */
-public class Encryption {
+public class Encode {
 
     public static String outmd5pwd;
 
@@ -32,7 +28,6 @@ public class Encryption {
                 }
                 buf.append(Integer.toHexString(i));
             }
-
 //System.out.println("result: " + buf.toString());
             outmd5pwd = buf.toString();
 //System.out.println(outmd5pwd);

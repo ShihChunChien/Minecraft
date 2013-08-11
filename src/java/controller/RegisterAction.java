@@ -53,7 +53,7 @@ public class RegisterAction extends SimpleFormController {
                     String[][] columnValue = {
                         {"status", status},
                         {"username", username},
-                        {"password", Encryption.md5(password)},
+                        {"password", Encode.md5(password)},
                         {"sex", sex},
                         {"email", email},
                         {"ip", ip}
@@ -91,7 +91,7 @@ public class RegisterAction extends SimpleFormController {
                     String[][] columnValue = {
                         {"status", status},
                         {"username", usernamePrefix + username},
-                        {"password", Encryption.md5(password)},
+                        {"password", Encode.md5(password)},
                         {"sex", sex},
                         {"ip", ip}
                     };
