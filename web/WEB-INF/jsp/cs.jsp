@@ -8,7 +8,10 @@
     </head>
     <body>        
         <div align="center">
-            <img src="resource/pic/under.jpg"/>
+            客服信箱：<br>
+        </div>
+        <div align="center" class="mail" style="font-weight: bold; font-size: 250%;">
+            CS@up9cloud.net
         </div>
     </body>
 </html>

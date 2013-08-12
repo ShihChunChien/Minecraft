@@ -11,7 +11,7 @@
         <script src="http://swip.codylindley.com/jquery.DOMWindow.js" type="text/javascript"></script>
     </head>
     <body>
-        
+
         <div id="header">
             <ul id="dropline">
                 <li class="current"><a href="notice.htm"><b>公告</b></a>
@@ -49,11 +49,11 @@
                         <li><a class="last" href="#url">Flyout Five</a></li>
                     </ul>
                 </li>
-                <%--<li><a href="cs.htm"><b>客服</b></a>
+                <li><a href="cs.htm"><b>客服</b></a>
                     <ul>
                         <li></li>
                     </ul>
-                </li>--%>
+                </li>
             </ul>
         </div>
         <div id="wrapper">
