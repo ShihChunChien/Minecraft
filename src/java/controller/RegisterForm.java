@@ -35,9 +35,9 @@ public class RegisterForm {
     public void setUsername(String username) {
         RegisterForm.username = username;
     }
-    
-    public void setUsernameOut(String usernamePrefix,String username){
-        RegisterForm.usernameOut=usernamePrefix+username;
+
+    public void setUsernameOut(String usernamePrefix, String username) {
+        RegisterForm.usernameOut = usernamePrefix + username;
     }
 
     public void setNickname(String nickname) {
@@ -78,8 +78,8 @@ public class RegisterForm {
     public String getUsername() {
         return username;
     }
-    
-    public String getUsernameOut(){
+
+    public String getUsernameOut() {
         return usernameOut;
     }
 

@@ -4,15 +4,15 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <base target="maincontent" />
-        <title>歡迎來到九天之上</title>
+        <title>歡迎來到九天之上</title>jquery.dimensions.min.js
         <link href="resource/CSS/reset.css" rel="stylesheet" type="text/css">
         <link href="resource/CSS/style.css" rel="stylesheet" type="text/css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" type="text/javascript"></script>
         <script src="http://swip.codylindley.com/jquery.DOMWindow.js" type="text/javascript"></script>
     </head>
     <body>
+        
         <div id="header">
-            <img id="logo" src="resource/pic/logo.jpg" width="190" height="127" />
             <ul id="dropline">
                 <li class="current"><a href="notice.htm"><b>公告</b></a>
                     <ul>
@@ -41,12 +41,12 @@
                 </li>--%>
                 <li><a href="download.htm"><b>下載</b></a>
                     <ul>
-                        <%--<li></li>
-                            <li><a href="#url">Flyout One</a></li>
-                            <li><a href="#url">Flyout Two</a></li>
-                            <li><a href="#url">Flyout Three</a></li>
-                            <li><a href="#url">Flyout Four</a></li>
-<li><a class="last" href="#url">Flyout Five</a></li>--%>
+                        <li></li>
+                        <li><a href="#url">Flyout One</a></li>
+                        <li><a href="#url">Flyout Two</a></li>
+                        <li><a href="#url">Flyout Three</a></li>
+                        <li><a href="#url">Flyout Four</a></li>
+                        <li><a class="last" href="#url">Flyout Five</a></li>
                     </ul>
                 </li>
                 <%--<li><a href="cs.htm"><b>客服</b></a>
@@ -56,48 +56,31 @@
                 </li>--%>
             </ul>
         </div>
-
         <div id="wrapper">
-            <div id="side">
-                <%--<a href="login.htm">登入</a>--%>
-                <a href="register.htm" class="absoluteIframeDOMWindow">註冊</a>
-                <script type="text/javascript">
-                    $('.absoluteIframeDOMWindow').openDOMWindow({
-                        height: 350,
-                        width: 350,
-                        positionType: 'absolute',
-                        positionTop: 230,
-                        eventType: 'click',
-                        positionLeft: 550,
-                        windowSource: 'iframe',
-                        windowPadding: 0,
-                        loader: 1,
-                        loaderImagePath: 'animationProcessing.gif',
-                        loaderHeight: 16,
-                        loaderWidth: 17
-                    });
-                </script>
-            </div>
             <div id="content">
-                <iframe src="notice.htm" class="iframe" id="maincontent" scrolling="auto" >
+                <iframe src="notice.htm" class="iframe" id="maincontent" scrolling="no" frameborder=0>
                 </iframe>
             </div>
         </div>
+        <div id="side">
+            <%--<a href="login.htm">登入</a>--%>
+            <a href="register.htm" class="absoluteIframeDOMWindow" >註冊</a>
+            <script type="text/javascript">
+                $('.absoluteIframeDOMWindow').openDOMWindow({
+                    height: 350,
+                    width: 350,
+                    //positionType: 'absolute',
+                    //positionTop: 100,
+                    //positionLeft: 550,
+                    eventType: 'click',
+                    windowSource: 'iframe',
+                    windowPadding: 0,
+                    loader: 1,
+                    loaderImagePath: 'animationProcessing.gif',
+                    loaderHeight: 16,
+                    loaderWidth: 17
+                });
+            </script>
+        </div>
     </body>
 </html>
-<script type="text/javascript"><%--input default給值--%>
-    $("input:text").each(
-            function() {
-                $(this).blur(
-                        function() {
-                            if (this.value === this.defaultValue)
-                                this.value = this.defaultValue;
-                        }
-                ).focus(
-                        function() {
-                            this.value = "";
-                        }
-                );
-            }
-    );
-</script>

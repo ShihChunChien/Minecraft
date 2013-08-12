@@ -1,14 +1,32 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
     "http://www.w3.org/TR/html4/loose.dtd">
-
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>歡迎來到九天之上</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" type="text/javascript"></script>
+        <script src="https://ido-yql-demo.googlecode.com/files/jquery.dimensions.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                var $winwidth = $(window).width();
+                $("img.fit-image").attr({
+                    width: $winwidth
+                });
+                $(window).bind("resize", function() {
+                    var $winwidth = $(window).width();
+                    $("img.fit-image").attr({
+                        width: $winwidth
+                    });
+                });
+            });
+        </script>   
     </head>
 
     <body>
+        <div id="tableTop">
+            <img src="resource/pic/notice/Announcement-Top.png" title="" alt="" class="fit-image"/><br>
+        </div>
         <div id="table">
             <h1>
                 三步驟</h1>

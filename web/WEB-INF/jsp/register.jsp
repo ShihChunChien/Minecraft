@@ -15,7 +15,7 @@
     </head>
 
     <body>
-        <div id="yuitabview1" class="yui-navset">
+        <div id="yuitabview1" class="yui-navset" >
             <ul class="yui-nav">
 
                 <li name="selector1" class="selected" ><a href="#tab1"><em>正版帳號注冊</em></a></li>
