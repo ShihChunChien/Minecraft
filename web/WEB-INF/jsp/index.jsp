@@ -1,5 +1,5 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -40,14 +40,14 @@
                     </ul>
                 </li>--%>
                 <li><a href="download.htm"><b>下載</b></a>
-                    <ul>
+                    <%--<ul>
                         <li></li>
                         <li><a href="#url">Flyout One</a></li>
                         <li><a href="#url">Flyout Two</a></li>
                         <li><a href="#url">Flyout Three</a></li>
                         <li><a href="#url">Flyout Four</a></li>
                         <li><a class="last" href="#url">Flyout Five</a></li>
-                    </ul>
+                    </ul>--%>
                 </li>
                 <li><a href="cs.htm"><b>客服</b></a>
                     <ul>

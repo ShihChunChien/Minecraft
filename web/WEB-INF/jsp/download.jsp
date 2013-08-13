@@ -1,5 +1,5 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -8,6 +8,7 @@
     </head>
 
     <body>
+        <div id="embeddedPage">
         <div id="header">
             <h1>
                 三步驟</h1>
@@ -72,6 +73,7 @@
                 <br>
                 填名稱→選版本→Save Profile(儲存檔案)<br>
                 <img src="resource/pic/download_newprofile2.jpg" style="width: 30%; height: 30%"/><br>
+            </div>
             </div>
     </body>
 </html>
