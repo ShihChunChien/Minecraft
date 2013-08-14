@@ -1,6 +1,5 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-    "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -35,7 +34,7 @@
         <br>
         <div id="table">
             <div class="tr">
-                <div class="td">伺服器位址：</div>
+                <div class="td">遊戲IP</div>
                 <div class="td">192.200.109.235</div>
                 <div class="td"><span style="color:#a9a9a9;">192.200.109.235:25566</span></div>
             </div>
