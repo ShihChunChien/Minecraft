@@ -34,9 +34,14 @@
         <br>
         <div id="table">
             <div class="tr">
-                <div class="td">遊戲IP</div>
-                <div class="td">192.200.109.235</div>
-                <div class="td"><span style="color:#a9a9a9;">192.200.109.235:25566</span></div>
+                <img src="resource/pic/gameip.jpg" title="遊戲IP" alt="遊戲IP"/><br>
+                <div class="td">
+                    正版檢查入口：up9cloud.net
+                </div>
+                <br>
+                <div class="td">
+                    備用入口：up9cloud.net:25566
+                </div>
             </div>
         </div>
     </body>
