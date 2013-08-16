@@ -3,8 +3,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <base target="content" />
+        <base target="_self" />
         <title>歡迎來到九天之上</title>
+        <link rel="shortcut icon" href="resource/pic/logo_icon.ico">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" type="text/javascript"></script>
         <script src="http://swip.codylindley.com/jquery.DOMWindow.js" type="text/javascript"></script>
         <script src="https://ido-yql-demo.googlecode.com/files/jquery.dimensions.js" type="text/javascript"></script>
@@ -15,20 +16,20 @@
             <!--<img src="resource/pic/logo.jpg" title="" alt="" class="fit-image"/><br>-->
             <div class="dropline">
                 <ul>
-                    <li><a href="http://up9cloud.net/notice.htm" class="current" target="content">公告</a></li>
-                    <li><a href="instruction.htm" target="content">新手說明</a>
+                    <li><a href="notice.htm" class="current" target="content">公告</a></li>
+                    <li><a href="page/instruction.html" target="content">新手說明</a>
                     </li>
-                    <li><a href="server.htm" target="content">伺服介紹</a> 
-                        <ul> 
-                            <li><a href="#" target="content">#</a></li>
-                            <li><a href="#" target="content">#</a></li>
-                            <li><a href="#" target="content">#</a></li>
-                            <li><a href="#" target="content">#</a></li>
+                    <li><a href="page/server.html" target="content">伺服介紹</a></li>
+                    <li><a href="donate.htm" target="content">贊助</a></li>
+                    <li><a href="page/download.html" target="content">下載</a>
+                        <ul>
+                            <li><a href="page/download/official.html" target="content">官方登入器</a></li>
+                            <li><a href="page/download/minecrack.html" target="content">其他版本登入器</a></li>
+                            <li><a href="page/download/input.html" target="content">中文輸入主程式</a></li>
+                            <li><a href="page/download/links.html" target="content">檔案連結</a></li>
                         </ul>
                     </li>
-                    <li><a href="donate.htm" target="content">贊助</a></li>
-                    <li><a href="download.htm" target="content">下載</a></li>
-                    <li><a href="cs.htm" target="content">客服</a></li>
+                    <li><a href="page/cs.html" target="content">客服</a></li>
                 </ul>
             </div>
             <div class="header-left"></div>
@@ -39,9 +40,9 @@
                 </a>
                 <script type="text/javascript">
                     $('.absoluteIframeDOMWindow').openDOMWindow({
-                        height: 350,
-                        width: 350,
-                        //positionType: 'absolute',
+                        height: 380,
+                        width: 380,
+                        //positionType: 'anchoredSingleWindow',
                         //positionTop: 100,
                         //positionLeft: 550,
                         eventType: 'click',
@@ -87,7 +88,7 @@
         <div id="footer">
             <div class="footer-left"></div>
             <div class="footer-middle">
-                <a href="http://www.gamerating.org.tw/gsgi_way.php">
+                <a href="http://www.gamerating.org.tw/gsgi_way.php" target="_blank">
                     <img src="http://www.gamerating.org.tw/images/class_15.gif" id="PG_15" title="輔導十五歲級" alt="輔導十五歲級"/></a><br>
             </div>
             <div class="footer-right"></div>

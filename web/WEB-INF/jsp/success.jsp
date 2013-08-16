@@ -13,5 +13,5 @@
         <%}%>
         密碼: <jsp:getProperty name="resbean" property="passwordOut" />
         <div align="right"><input type="button" value="回首頁" onClick="window.top.location.href = 'index.htm';"></div>
-    </body> 
+    </body>
 </html>
