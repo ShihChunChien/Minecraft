@@ -4,7 +4,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <base target="_self" />
-        <title>歡迎來到九天之上</title>
+    <div itemscope itemtype="http://data-vocabulary.org/Organization"></div>
+        <title itemprop="name">九天之上 | Minecraft 麥塊 當個創世神 - 台灣繁體中文伺服器 - 私服</title>
         <link rel="shortcut icon" href="resource/pic/logo_icon.ico">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" type="text/javascript"></script>
         <script src="http://swip.codylindley.com/jquery.DOMWindow.js" type="text/javascript"></script>
@@ -15,6 +16,7 @@
         <div id="header">
             <!--<img src="resource/pic/logo.jpg" title="" alt="" class="fit-image"/><br>-->
             <div class="dropline">
+                
                 <ul>
                     <li><a href="notice.htm" class="current" target="content">公告</a></li>
                     <li><a href="page/instruction.html" target="content">新手說明</a>
@@ -23,8 +25,8 @@
                     <li><a href="donate.htm" target="content">贊助</a></li>
                     <li><a href="page/download.html" target="content">下載</a>
                         <ul>
-                            <li><a href="page/download/official.html" target="content">官方登入器</a></li>
-                            <li><a href="page/download/minecrack.html" target="content">其他版本登入器</a></li>
+                            <!--<li><a href="page/download/official.html" target="content">官方(正版)登入器</a></li>-->
+                            <li><a href="page/download/minecrack.html" target="content">登入器</a></li>
                             <li><a href="page/download/input.html" target="content">中文輸入主程式</a></li>
                             <li><a href="page/download/links.html" target="content">檔案連結</a></li>
                         </ul>
@@ -32,7 +34,9 @@
                     <li><a href="page/cs.html" target="content">客服</a></li>
                 </ul>
             </div>
-            <div class="header-left"></div>
+            <div class="header-left">
+                目前版本: Minecraft 1.6.2
+            </div>
             <div class="header-middle">
                 <%--<a href="login.htm">登入</a>--%>
                 <a href="register.htm" class="absoluteIframeDOMWindow" >

@@ -3,7 +3,9 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
     "http://www.w3.org/TR/html4/loose.dtd">
 <html> 
-    <head><title>Login Success</title></head> 
+    <head>
+        <title>up9cloud.net - 九天之上 | Minecraft 麥塊 - 繁體中文私服</title>
+    </head> 
     <body>
         <jsp:useBean id="resbean" class="controller.RegisterForm" scope="request"/>
         <h1>恭喜您註冊成功！註冊資料如下：</h1><br>

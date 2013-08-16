@@ -5,7 +5,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>歡迎來到九天之上</title>
+        <title>up9cloud.net - 九天之上 | Minecraft 麥塊 - 繁體中文私服</title>
     </head>
 
     <body>

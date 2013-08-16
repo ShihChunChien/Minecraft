@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>歡迎來到九天之上</title>
+        <title>up9cloud.net - 九天之上 | Minecraft 麥塊 - 繁體中文私服</title>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" type="text/javascript"></script>
         <script src="https://ido-yql-demo.googlecode.com/files/jquery.dimensions.js" type="text/javascript"></script>
         <script type="text/javascript">

@@ -11,7 +11,7 @@
         <script src="http://yui.yahooapis.com/2.9.0/build/yahoo-dom-event/yahoo-dom-event.js" type="text/javascript"></script>
         <script src="http://yui.yahooapis.com/2.9.0/build/element/element-min.js" type="text/javascript"></script>
         <script src="http://yui.yahooapis.com/2.9.0/build/tabview/tabview-min.js" type="text/javascript"></script>
-        <title>歡迎來到九天之上</title>
+        <title>up9cloud.net - 九天之上 | Minecraft 麥塊 - 繁體中文私服</title>
     </head>
 
     <body>
