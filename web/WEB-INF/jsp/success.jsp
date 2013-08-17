@@ -1,19 +1,24 @@
 <%@page import="controller.RegisterForm"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-    "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML>
 <html> 
     <head>
         <title>up9cloud.net - 九天之上 | Minecraft 麥塊 - 繁體中文私服</title>
     </head> 
     <body>
         <jsp:useBean id="resbean" class="controller.RegisterForm" scope="request"/>
-        <h1>恭喜您註冊成功！註冊資料如下：</h1><br>
-        使用者名稱: <jsp:getProperty name="resbean" property="usernameOut" /><br>
+        <h1>註冊成功！</h1>
         <%if (RegisterForm.status.equals("1")) {%>
-        電子信箱: <jsp:getProperty name="resbean" property="email" /><br>
+        注意！<br>
+        您的帳號有加上前綴字: <span style="color:#b22222;"><jsp:getProperty name="resbean" property="usernamePrefix" /></span><br>
+        登入時請注意帳號正確性<br>
         <%}%>
-        密碼: <jsp:getProperty name="resbean" property="passwordOut" />
-        <div align="right"><input type="button" value="回首頁" onClick="window.top.location.href = 'index.htm';"></div>
+        <br>
+        帳號: <jsp:getProperty name="resbean" property="usernameOut" /><br>
+        <%if (RegisterForm.status.equals("1")) {%>
+        信箱: <jsp:getProperty name="resbean" property="email" /><br>
+        <%}%>
+        密碼: <jsp:getProperty name="resbean" property="passwordOut" /><br>
+        <div align="right"><input type="button" value="回首頁" onClick="window.top.location.href = 'index.html';"></div>
     </body>
 </html>
