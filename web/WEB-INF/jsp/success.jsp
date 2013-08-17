@@ -9,9 +9,11 @@
         <jsp:useBean id="resbean" class="controller.RegisterForm" scope="request"/>
         <h1>註冊成功！</h1>
         <%if (RegisterForm.status.equals("1")) {%>
+        <span style="color:#b22222;">
         注意！<br>
-        您的帳號有加上前綴字: <span style="color:#b22222;"><jsp:getProperty name="resbean" property="usernamePrefix" /></span><br>
+        您的帳號有加上前綴字: <jsp:getProperty name="resbean" property="usernamePrefix" /><br>
         登入時請注意帳號正確性<br>
+        </span>
         <%}%>
         <br>
         帳號: <jsp:getProperty name="resbean" property="usernameOut" /><br>

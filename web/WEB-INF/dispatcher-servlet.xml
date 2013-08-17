@@ -19,7 +19,7 @@
         <property name="mappings">
             <props>
                 <prop key="index.htm">indexController</prop>
-                <prop key="notice.htm">notice</prop>
+                <!--<prop key="notice.htm">notice</prop>-->
                 <!--<prop key="instruction.htm">instruction</prop>-->
                 <!--<prop key="server.htm">server</prop>-->
                 <prop key="donate.htm">donate</prop>

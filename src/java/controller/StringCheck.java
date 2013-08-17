@@ -14,7 +14,7 @@ import java.util.regex.Pattern;
 public class StringCheck {
 
     public final static String patternMail = "^([\\w-\\.]+)@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.)|(([\\w-]+\\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\\]?)$";
-    public final static String patternUsername = "^[A-Za-z0-9]{4,16}$";
+    public final static String patternUsername = "^[A-Za-z0-9]{4,12}$";
     public final static String[] patternUsernamePrefix = {"sp_", "up9cloud_"};
 
 //    public static void main(String[] args) {
@@ -68,7 +68,7 @@ public class StringCheck {
         } else if (4 > password.length()) {
             int length;
             flag = false;
-        } else if (16 < password.length()) {
+        } else if (12 < password.length()) {
             flag = false;
         } else {
             flag = true;

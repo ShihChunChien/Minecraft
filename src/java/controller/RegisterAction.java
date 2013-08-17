@@ -79,7 +79,7 @@ public class RegisterAction extends SimpleFormController {
                 if (!StringCheck.usernameCheck(username)) {//格式檢查錯誤
                     tipsout = "帳號格式錯誤";
                 } else if (!StringCheck.passwordCheck(password)) {
-                    tipsout = "密碼要4~16位";
+                    tipsout = "密碼要4~12位";
                 } else if (!StringCheck.usernamePrefixCheck(usernamePrefix)) {
                     tipsout = "前綴字不合規定";
                 } else {//格式正確

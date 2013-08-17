@@ -54,7 +54,7 @@
                         <input type="hidden"  name="status" value="1"/>
                         <input type="hidden"  name="usernamePrefix" value=""/>
                         <input type="hidden" name="username" value=""/>
-                        信箱 <input type="text" title="email" value="請輸入帳號" name="email"
+                        信箱 <input type="text" title="email" value="請輸入電子信箱" name="email"
                                   onfocus="if (this.value == this.defaultValue)
                                 this.value = ''"/><br>
                         密碼 <input type="password" value="" name="password"/><br>
