@@ -15,8 +15,8 @@
     <body>
         <div id="yuitabview1" class="yui-navset" >
             <ul class="yui-nav">
-                <li name="selector2" class="selected" ><a href="#tab2"><em>普通注冊</em></a></li>
-                <li name="selector1"><a href="#tab1"><em>正版帳號注冊</em></a></li>
+                <li name="selector2" class="selected" ><a href="#tab2"><em>普通註冊</em></a></li>
+                <li name="selector1"><a href="#tab1"><em>正版帳號註冊</em></a></li>
             </ul>
             <div class="yui-content">
                 <div id="tab2" align="left">
@@ -54,7 +54,7 @@
                         <input type="hidden"  name="status" value="1"/>
                         <input type="hidden"  name="usernamePrefix" value=""/>
                         <input type="hidden" name="username" value=""/>
-                        信箱 <input type="text" title="email" value="請輸入電子信箱" name="email"
+                        信箱 <input type="text" title="email" value="請輸入mail" name="email"
                                   onfocus="if (this.value == this.defaultValue)
                                 this.value = ''"/><br>
                         密碼 <input type="password" value="" name="password"/><br>
@@ -66,81 +66,9 @@
                         <div class="tip" name="tips1">${tips1}</div>
                     </form>
                 </div>
-
             </div>
             <div align="right"><input type="button" value="回首頁" onClick="window.top.location.href = 'index.html';"></div>
         </div>
-        <script language="javascript" type="text/javascript">
-
-                        d = top.document.getElementById("DOMWindowIframe").name;
-                        e = top.window.frames[d].document.getElementsByName("tips1")[0].innerText;
-                        f = top.window.frames[d].document.getElementsByName("tips0")[0].innerText;
-                        g = top.window.frames[d].document.getElementsByName("selector1")[0];
-                        h = top.window.frames[d].document.getElementsByName("selector2")[0];
-                        if (e != "") {
-                            g.className = "selected";
-                            h.className = "";
-                        }
-                        else if (f != "") {
-                            h.className = "selected";
-                            g.className = "";
-                        }
-
-
-
-                        function checktab1()
-                        {
-                            var x = top.document.getElementById("DOMWindowIframe").name;
-                            var a = top.window.frames[x].document.getElementsByName("email");
-                            var b = top.window.frames[x].document.getElementsByName("password");
-                            var c = top.window.frames[x].document.getElementsByName("sex");
-
-                            if (a[0].value === "") {
-                                alert("請輸入信箱");
-                                return false;
-                            }
-                            if (b[0].value === "") {
-                                alert("請輸入密碼");
-                                return false;
-                            }
-                            if (c[0].checked === false && c[1].checked === false) {
-                                alert("請輸入性別");
-                                return false;
-                            }
-                        }
-
-                        function checktab2()
-                        {
-                            var x = top.document.getElementById("DOMWindowIframe").name;
-                            var a1 = top.window.frames[x].document.getElementsByName("username");
-                            var b = top.window.frames[x].document.getElementsByName("password");
-                            var c = top.window.frames[x].document.getElementsByName("sex");
-
-                            if (a1[1].value === "") {
-                                alert("請輸入帳號");
-                                return false;
-                            }
-                            if (b[1].value === "") {
-                                alert("請輸入密碼");
-                                return false;
-                            }
-                            if (c[2].checked === false && c[3].checked === false) {
-                                alert("請輸入性別");
-                                return false;
-                            }
-                        }
-
-
-
-                        (function() {
-                            var cn = document.body.className.toString();
-                            if (cn.indexOf('yui-skin-sam') === -1) {
-                                document.body.className += " yui-skin-sam";
-                            }
-                        })();
-
-                        var yuitabview1 = new YAHOO.widget.TabView('yuitabview1');
-
-        </script>
+        <script src="/resource/js/register.usage.js" type="text/javascript"></script>
     </body>
 </html>

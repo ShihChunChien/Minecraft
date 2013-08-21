@@ -26,7 +26,7 @@
                 <!--<prop key="download.htm">download</prop>-->
                 <!--<prop key="cs.htm">cs</prop>-->
                 <prop key="login.htm">login</prop>
-                <prop key="register.htm">register</prop> 
+                <prop key="register.htm">register</prop>
                 <prop key="login.do">loginAction</prop>
                 <prop key="register.do">registerAction</prop>
             </props>
