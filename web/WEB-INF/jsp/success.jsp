@@ -17,12 +17,13 @@
                 <div class="sep"></div>
                 <%if (RegisterForm.status.equals("0")) {%>
                 <div class="important">
-                    注意！<br>
-                    您的帳號有加上前綴字:<br>
-                    <div class="result"><jsp:getProperty name="resbean" property="usernamePrefix" /></div>
-                    登入時請注意帳號正確性<br>
+                    -----------------------------------------------<br>
+                    您帳號前面有加上: <jsp:getProperty name="resbean" property="usernamePrefix" /><br>
+                    請使用下方"完整"的帳號登入！<br>
+                    若喜歡此遊戲，請支持正版！<br>
+                    -----------------------------------------------<br>
                 </div>
-                    <br>
+                <br>
                 <%}%>
                 帳號: <div class="result"><jsp:getProperty name="resbean" property="usernameOut" /></div>
                 <%if (RegisterForm.status.equals("1")) {%>

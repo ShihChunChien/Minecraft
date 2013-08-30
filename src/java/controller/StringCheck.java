@@ -15,7 +15,7 @@ public class StringCheck {
 
     public final static String patternMail = "^([\\w-\\.]+)@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.)|(([\\w-]+\\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\\]?)$";
     public final static String patternUsername = "^[A-Za-z0-9]{4,12}$";
-    public final static String[] patternUsernamePrefix = {"sp_", "up9cloud_"};
+    public final static String[] patternUsernamePrefix = {"sp-", "up9cloud-"};
 
 //    public static void main(String[] args) {
 //        System.out.println(patternMail);

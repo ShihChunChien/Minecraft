@@ -28,12 +28,12 @@
                         <form id="registerform" name="registerform" action="register.do" method="post" onsubmit="return checktab2();">
                             <div class="inputs">
                                 <input type="hidden"  name="status" value="0"/>
-                                <select name="usernamePrefix">
-                                    <option value="sp_" >sp_</option>
-                                    <%--<option value="up9cloud_" >up9cloud_</option>
-                                    <option value="" >_</option>--%>
+                                <select class="prefix" name="usernamePrefix">
+                                    <option value="sp-" >sp-</option>
+                                    <%--<option value="up9cloud-" >up9cloud-</option>
+                                    <option value="-" >-</option>--%>
                                 </select>
-                                <input type="text" name="username" placeholder="請輸入帳號" autofocus />
+                                <input type="username" name="username" placeholder="請輸入帳號" autofocus />
                                 <input type="hidden" name="email" placeholder="請輸入信箱"/>
                                 <input type="password" name="password" placeholder="請輸入密碼" />
                                 <br>
