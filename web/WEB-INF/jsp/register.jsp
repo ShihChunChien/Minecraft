@@ -25,7 +25,7 @@
                             請填寫資料：<br>
                         </div>
                         <div class="important" name="tips0">${tips0}</div>
-                        <form id="registerform" name="registerform" action="register.do" target="qtip-content" method="post" onsubmit="return checktab2();">
+                        <form id="registerform" name="registerform" action="register.do" method="post" onsubmit="return checktab2();">
                             <div class="inputs">
                                 <input type="hidden"  name="status" value="0"/>
                                 <select class="prefix" name="usernamePrefix">
@@ -58,7 +58,7 @@
                             </div>
                         </div>
                         <div class="tip" name="tips1">${tips1}</div>
-                        <form id="registerform" name="registerform" action="register.do" target="qtip-content" method="post" onsubmit="return checktab1();">
+                        <form id="registerform" name="registerform" action="register.do" method="post" onsubmit="return checktab1();">
                             <div class="inputs">
                                 <input type="hidden" name="status" value="1"/>
                                 <input type="hidden" name="usernamePrefix" value=""/>
