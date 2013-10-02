@@ -29,6 +29,7 @@
                 <prop key="register.htm">register</prop>
                 <prop key="login.do">loginAction</prop>
                 <prop key="register.do">registerAction</prop>
+                <prop key="sidebar.htm">sidebar</prop>
             </props>
         </property>
     </bean>
@@ -66,14 +67,17 @@
           p:viewName="login" />
     <bean name="register"
           class="org.springframework.web.servlet.mvc.ParameterizableViewController"
-          p:viewName="register" /> 
+          p:viewName="register" />
+     <bean name="sidebar"
+          class="org.springframework.web.servlet.mvc.ParameterizableViewController"
+          p:viewName="sidebar" /> 
     
     <bean id="loginAction" class="controller.LoginAction"> 
         <property name="commandClass"> 
             <value>controller.LoginForm</value> 
         </property> 
         <property name="successView"> 
-            <value>success</value> 
+            <value>LoginSuccess</value> 
         </property> 
         <property name="formView"> 
             <value>login</value> 
