@@ -43,7 +43,7 @@
                                 <%--<div class="checkboxy">
                                     <input name="cecky" id="checky" value="1" type="checkbox" /><label class="terms">同意使用者合約</label>
                                 </div>--%>
-                                <input id="submit" type="submit" value="確認">
+                                <input id="submit" type="submit" value="確定註冊">
                             </div>
                         </form>
                     </div>
@@ -72,7 +72,7 @@
                                 <%--<div class="checkboxy">
                                     <input name="cecky" id="checky" value="1" type="checkbox" /><label class="terms">同意使用者合約</label>
                                 </div>--%>
-                                <input id="submit" type="submit" value="確認"></a>
+                                <input id="submit" type="submit" value="確定註冊"></a>
                             </div>
                         </form>
                     </div>
