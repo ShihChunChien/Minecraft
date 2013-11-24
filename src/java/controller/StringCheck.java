@@ -23,9 +23,8 @@ public class StringCheck {
 //        System.out.println(patternUsernamePrefix);
 //    }
     public static boolean mailCheck(String mail) {
-        boolean flag;
+        boolean flag = false;
         if (mail == null) {
-            flag = false;
         } else {
             Pattern pattern = Pattern.compile(patternMail);
             Matcher matcher = pattern.matcher(mail);
@@ -35,9 +34,8 @@ public class StringCheck {
     }
 
     public static boolean usernameCheck(String username) {
-        boolean flag;
+        boolean flag = false;
         if (username == null) {
-            flag = false;
         } else {
             Pattern pattern = Pattern.compile(patternUsername);
             Matcher matcher = pattern.matcher(username);
@@ -47,11 +45,9 @@ public class StringCheck {
     }
 
     public static boolean usernamePrefixCheck(String prefix) {
-        boolean flag;
+        boolean flag = false;
         if (prefix == null) {
-            flag = false;
         } else {
-            flag = false;
             for (int i = 0; i < patternUsernamePrefix.length; i++) {
                 if (prefix.equals(patternUsernamePrefix[i])) {
                     flag = true;
@@ -62,14 +58,10 @@ public class StringCheck {
     }
 
     public static boolean passwordCheck(String password) {
-        boolean flag;
+        boolean flag = false;
         if (password == null) {
-            flag = false;
         } else if (4 > password.length()) {
-            int length;
-            flag = false;
         } else if (12 < password.length()) {
-            flag = false;
         } else {
             flag = true;
         }
