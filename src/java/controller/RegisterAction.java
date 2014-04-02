@@ -67,7 +67,7 @@ public class RegisterAction extends SimpleFormController {
                         return new ModelAndView(this.getSuccessView(), "user", tipsout);
                     } else {//寫入失敗
                         System.out.println(OfficialCheck.getResult());
-                        if (databaseModify.errorCode == 1062) {//sql錯誤訊息比對
+                        if (databaseModify.getErrorCode() == 1062) {//sql錯誤訊息比對
                             tipsout = "此帳號已註冊過";
                         } else {
                             tipsout = "註冊失敗";
@@ -104,7 +104,7 @@ public class RegisterAction extends SimpleFormController {
                         registerForm.setPasswordOut(password);
                         return new ModelAndView(this.getSuccessView(), "user", tipsout);
                     } else {//寫入失敗
-                        if (databaseModify.errorCode == 1062) {//sql錯誤訊息比對
+                        if (databaseModify.getErrorCode() == 1062) {//sql錯誤訊息比對
                             tipsout = "此帳號已註冊過";
                         } else {
                             tipsout = "註冊失敗";
