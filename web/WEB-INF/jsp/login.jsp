@@ -9,7 +9,7 @@
         <base target="_self" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-        <link href="/resource/CSS/login.css" rel="stylesheet" type="text/css">
+        <link href="/resource/css/login.css" rel="stylesheet" type="text/css">
         <!--<script src="/resource/js/login.usage.js" type="text/javascript"></script>-->
     </head>
 

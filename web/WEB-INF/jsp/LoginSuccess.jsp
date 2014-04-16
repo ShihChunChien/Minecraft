@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html> 
     <head>
-        <title>up9cloud.net - 九天之上 | Minecraft 麥塊 - 繁體中文私服</title> 
+        <jsp:include page="public/template/head_content.html"></jsp:include>
     </head> 
     <body>        
         ${user}<br>

@@ -19,12 +19,7 @@
         <property name="mappings">
             <props>
                 <prop key="index.htm">indexController</prop>
-                <!--<prop key="notice.htm">notice</prop>-->
-                <!--<prop key="instruction.htm">instruction</prop>-->
-                <!--<prop key="server.htm">server</prop>-->
                 <prop key="donate.htm">donate</prop>
-                <!--<prop key="download.htm">download</prop>-->
-                <!--<prop key="cs.htm">cs</prop>-->
                 <prop key="login.htm">login</prop>
                 <prop key="register.htm">register</prop>
                 <prop key="login.do">loginAction</prop>
@@ -68,9 +63,9 @@
     <bean name="register"
           class="org.springframework.web.servlet.mvc.ParameterizableViewController"
           p:viewName="register" />
-     <bean name="sidebar"
-          class="org.springframework.web.servlet.mvc.ParameterizableViewController"
-          p:viewName="sidebar" /> 
+    <bean name="sidebar"
+           class="org.springframework.web.servlet.mvc.ParameterizableViewController"
+           p:viewName="sidebar" /> 
     
     <bean id="loginAction" class="controller.LoginAction"> 
         <property name="commandClass"> 

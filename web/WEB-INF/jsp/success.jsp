@@ -5,7 +5,7 @@
 <html> 
     <head>
         <title>up9cloud.net - 九天之上 | Minecraft 麥塊 - 繁體中文私服</title>
-        <link href="/resource/CSS/register.css" rel="stylesheet" type="text/css">
+        <link href="/resource/css/register.css" rel="stylesheet" type="text/css">
         <base target="_self" />
     </head> 
     <body>

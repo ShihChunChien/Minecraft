@@ -7,7 +7,7 @@
         <base target="_self" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-        <link href="/resource/CSS/register.css" rel="stylesheet" type="text/css">
+        <link href="/resource/css/register.css" rel="stylesheet" type="text/css">
         <script src="/resource/js/register.usage.js" type="text/javascript"></script>
     </head>
     <body>

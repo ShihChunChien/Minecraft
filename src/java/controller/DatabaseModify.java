@@ -13,14 +13,12 @@ import java.sql.Statement;
 public class DatabaseModify {
 
     private final String host = "10.0.0.200";
-//    private final String host = "173.1.15.169";
 //    private final String host = "localhost";
     private final String port = "3306";
     private static String dbname;
     private static String tablename;
     private final String user = "webapps";
     private final String password = "sppabew";
-//    private final String password = "123456";
     private final String driver = "com.mysql.jdbc.Driver";
     private final String dburl = "jdbc:mysql://" + host + ":" + port + "/" + dbname;
     private static String method;
