@@ -2,16 +2,16 @@
 <!DOCTYPE HTML>
 <html> 
     <head>
-        <jsp:include page="public/template/head_content.html"></jsp:include>
+        <title>up9cloud.net - 九天之上 | Minecraft 麥塊 - 繁體中文私服</title>
     </head> 
-    <body>        
+    <body>
         ${user}<br>
         <span id="countbox"></span>秒後自動返回首頁
         <script type="text/JavaScript">
             var sec = 5;
             for(var i=sec;i>=0;i--) 
             { 
-                window.setTimeout("counter(" + i + ")", (sec-i) * 1000); 
+            window.setTimeout("counter(" + i + ")", (sec-i) * 1000); 
             } 
             function counter(num)
             { 
