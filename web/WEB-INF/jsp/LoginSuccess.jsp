@@ -16,7 +16,7 @@
             function counter(num)
             { 
             document.getElementById("countbox").innerHTML = num ; 
-            if (num == 0){window.location=window.top.location = "index.html";}
+            if (num == 0){window.location=window.top.location = "sidebar.htm";}
             }
         </script>
     </body>
